@@ -1,86 +1,120 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Latihan HTML</title>
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Latihan HTML</title>
-</head>
+  <style>
+    * {
+      margin: 0;
+    }
 
-<style>
-	div {
-		text-align: justify;
-		text-justify: inter-word;
+    .header img {
+      width: 100%;
+      background-color: aqua;
+    }
+
+    .navbar li {
+      display: inline;
+      padding: 20px;
+    }
+
+    .navbar {
+      text-align: center;
+      background-color: black;
+	  height: 35px;
+	  padding-top: 10px;
+    }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: grey;
+    }
+
+    .paragraf {
+      text-align: justify;
+      text-justify: inter-word;
+      line-height: 25px;
+    }
+
+    .main {
+      width: 100%;
+    }
+
+    .left {
+      margin-left: 150px;
+      width: 40%;
+      float: left;
+    }
+
+    .right {
+      margin-top: 1%;
+      width: 35%;
+      height: 35%;
+      float: right;
+      margin-bottom: 1%;
+    }
+
+	table {
+		bottom: 0;
 	}
 
-	.main {
-		width: 100%;
-	}
+    table th {
+      color: white;
+    }
+  </style>
 
-	.left {
-		margin-left: 150px;
-		width: 40%;
-		float: left;
-	}
+  <body bgcolor="white">
+    <!--Navbar-->
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!--Navbar-->
 
-	.right {
-		margin-top: 1%;
-		width: 35%;
-		height: 35%;
-		float: right;
-		margin-bottom: 1%;
-	}
-</style>
+    <!--Gambar Header-->
+    <div class="header"><img src="img/header-ikan.jpg" alt="header" /></div>
+    <!--Header End-->
 
-<body bgcolor="white">
-	<center>
-		<table width="100%">
-			<tr style="height: 15px;">
-				<th width="90px">Home</th>
-				<th width="90px">Blog</th>
-				<th width="90px">About</th>
-				<th width="90px">Contact</th>
-			</tr>
-		</table>
-	</center>
+	<!--Main-->
+    <div class="main">
+      <div class="left">
+        <h2>Title</h2>
+        <hr width="25%" align="left" />
+        <div class="paragraf">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          mollitia,molestiae quas vel sint commodi repudian- dae consequuntur
+          voluptatum laborumnumquam blanditiis harum quisquam eius sed odit
+          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
+          accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut
+          moles tias architecto voluptate aliquamnihil, eveniet aliquid culpa.
+        </div>
+      </div>
+	<!--End Main-->
 
-	<table width="100%" height="250px">
-		<tr>
-			<th bgcolor="gray">Gambar Header</th>
-		</tr>
-	</table>
+	  <!--Sidebar-->
+      <div class="right">
+        <img src="img/lorem.jpg" alt="Gambar 1" />
+      </div>
+	  <!--End Sidebar-->
+    </div>
 
-	<div class="main">
-		<div class="left">
-			<td colspan="1" width="1000px">
-				<h2>Title</h2>
-				<hr width="25%" align="left">
-				<div style="line-height: 25px;">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Maxime mollitia,molestiae quas vel sint commodi repudian-
-					dae consequuntur voluptatum laborumnumquam blanditiis
-					harum quisquam eius sed odit fugiat iusto fuga praesentium
-					optio, eaque rerum! Provident similique accusantium nemo
-					autem. Veritatisobcaecati tenetur iure eius earum ut moles
-					tias architecto voluptate aliquamnihil, eveniet aliquid culpa.
-				</div>
-			</td>
-		</div>
-
-		<div class="right">
-			<img src="lorem.jpg" alt="Gambar 1" />
-		</div>
-
-	</div>
-
-	</tr>
-	<br>
-	<br>
-
-	<table style="width:100%" height="60px">
-		<tr>
-			<th colspan="3" style="background-color:grey;">@Footer</th>
-		</tr>
-	</table>
-</body>
+	<!--Footer-->
+    <table style="width: 100%" height="55px">
+      <tr>
+        <th colspan="3" style="background-color:black;">@Footer</th>
+      </tr>
+    </table>
+	<!--End Footer-->
+  </body>
 </html>
