@@ -4,11 +4,13 @@ body{
     margin:0;
     padding:0;
 }
-.navbar,a{
+.navbar{
     background-color: rgba(143, 168, 170, 0.295);
+}
+a{
     color: rgb(79, 172, 163);
     font-weight: bold;
-}
+} 
 .header{
     background-image: url(img/header.jpg);
     height: 300px;
