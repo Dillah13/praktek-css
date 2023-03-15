@@ -1,120 +1,146 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Latihan HTML</title>
-  </head>
 
-  <style>
-    * {
-      margin: 0;
-    }
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+</head>
 
-    .header img {
-      width: 100%;
-      background-color: aqua;
-    }
+<style>
+  * {
+    margin: 0;
+  }
 
-    .navbar li {
-      display: inline;
-      padding: 20px;
-    }
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+  }
 
-    .navbar {
-      text-align: center;
-      background-color: black;
-	  height: 35px;
-	  padding-top: 10px;
-    }
+  .header {
+    background-image: url(img/header-home.jpg);
+    height: 300px;
+    padding-top: 8px;
+    font-size: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
 
-    .navbar li a {
-      color: white;
-      text-decoration: none;
-    }
+  .header img {
+    width: 100%;
+    height: 340px;
+  }
 
-    a:hover {
-      background-color: grey;
-    }
+  a {
+    color: rgb(79, 172, 163);
+    font-weight: bold;
+    text-decoration: none;
+  }
 
-    .paragraf {
-      text-align: justify;
-      text-justify: inter-word;
-      line-height: 25px;
-    }
+  .navbar {
+    background-color: rgba(143, 168, 170, 0.295);
+  }
 
-    .main {
-      width: 100%;
-    }
+  .paragraf {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 30px;
+  }
 
-    .left {
-      margin-left: 150px;
-      width: 40%;
-      float: left;
-    }
+  .main {
+    width: 100%;
+  }
 
-    .right {
-      margin-top: 1%;
-      width: 35%;
-      height: 35%;
-      float: right;
-      margin-bottom: 1%;
-    }
+  .left {
+    margin-left: 100px;
+    width: 40%;
+    float: left;
+  }
 
-	table {
-		bottom: 0;
-	}
+  .right img {
+    margin-top: 1%;
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin-bottom: 1%;
+    margin-right: 110px;
+  }
+</style>
 
-    table th {
-      color: white;
-    }
-  </style>
-
-  <body bgcolor="white">
-    <!--Navbar-->
-    <div class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <!--Navbar-->
-
-    <!--Gambar Header-->
-    <div class="header"><img src="img/header-ikan.jpg" alt="header" /></div>
-    <!--Header End-->
-
-	<!--Main-->
-    <div class="main">
-      <div class="left">
-        <h2>Title</h2>
-        <hr width="25%" align="left" />
-        <div class="paragraf">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia,molestiae quas vel sint commodi repudian- dae consequuntur
-          voluptatum laborumnumquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut
-          moles tias architecto voluptate aliquamnihil, eveniet aliquid culpa.
-        </div>
-      </div>
-	<!--End Main-->
-
-	  <!--Sidebar-->
-      <div class="right">
-        <img src="img/lorem.jpg" alt="Gambar 1" />
-      </div>
-	  <!--End Sidebar-->
-    </div>
-
-	<!--Footer-->
-    <table style="width: 100%" height="55px">
+<body>
+  <!--Navbar-->
+  <div class="navbar">
+    <table border="0" cellspacing="20px" width="100%">
       <tr>
-        <th colspan="3" style="background-color:black;">@Footer</th>
+        <td width="35%"></td>
+        <td align="center">
+          <a style="text-decoration: none" href="index.html">Home</a>
+        </td>
+        <td align="center">
+          <a style="text-decoration: none" href="menu.html">Menu</a>
+        </td>
+        <td align="center">
+          <a style="text-decoration: none" href="content.menu.html">About</a>
+        </td>
+        <td>
+          <a style="text-decoration: none" href="contact.html">Contact Us</a>
+        </td>
+        <td width="20%"></td>
       </tr>
     </table>
-	<!--End Footer-->
-  </body>
+  </div>
+  <!--End Navbar-->
+
+  <!--Gambar Header-->
+  <div class="header">
+    <h4>
+      THE FISH STORE <br>
+      "TEMUKAN KEINDAHAN IKANMU"
+    </h4>
+  </div>
+  <!--Header End-->
+
+  <!--Main-->
+  <div class="main">
+    <div class="left">
+      <br>
+      <h2>THE FISH STORE</h2>
+      <hr width="40%" align="left" />
+      <br>
+      <div class="paragraf">
+        Selamat datang di toko ikan hias kami!
+        Kami menyediakan berbagai jenis ikan hias yang indah dan unik untuk mempercantik akuarium Anda. Dengan stok yang
+        selalu segar dan berkualitas tinggi, kami berkomitmen untuk memberikan layanan terbaik kepada pelanggan
+        kami.<br>
+        Anda dapat menemukan berbagai jenis ikan hias dari seluruh dunia di toko kami, termasuk ikan cupang, neon tetra,
+        guppy, dan masih banyak lagi. Kami juga memiliki berbagai aksesoris akuarium, seperti dekorasi, filter, dan
+        makanan ikan, yang dapat membantu anda menjaga akuarium anda tetap bersih dan sehat.<br>
+        Kami memiliki tim ahli yang terlatih untuk membantu anda memilih ikan yang tepat untuk akuarium anda. Kami juga
+        dapat memberikan saran dan tips untuk merawat ikan anda agar tetap sehat dan bahagia.
+      </div>
+      <br>
+    </div>
+    <!--End Main-->
+  </div>
+  <!--Sidebar-->
+  <div class="right">
+    <img src="img/gambar-koi.png" alt="Gambar 1" />
+  </div>
+  <!--End Sidebar-->
+  </div>
+
+  <!--Footer-->
+  <table style="width: 100%" height="55px">
+    <tr>
+      <th colspan="3" style="background-color: rgba(121, 148, 148, 0.295);">The Fish Store</th>
+    </tr>
+  </table>
+  <!--End Footer-->
+</body>
+
 </html>
