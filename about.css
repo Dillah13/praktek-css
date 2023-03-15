@@ -12,7 +12,7 @@ a{
     font-weight: bold;
 }
 .header{
-    background-image: url(header.jpg);
+    background-image: url(img/header.jpg);
     height: 300px;
     padding-top: 8px;
     font-size: 60px;
